@@ -12,7 +12,7 @@ An unofficial API for Quora.
 **Note: The new Quora UI revamp breaks this API, so whenever that goes public for guests, parts of the API will need to be rewritten.**
 
 # API Usage
-**API Base URL: `http://quora-api.herokuapp.com`**
+### API Base URL: `http://quora-api.herokuapp.com`
 
 ## GET: `/users/<user>`
 ### Example
@@ -73,8 +73,8 @@ Example result (excerpt):
 # Installation
 If you want to run the API locally:
 
-  $ pip install -r requirements.txt
-  $ python server.py
+    $ pip install -r requirements.txt
+    $ python server.py
 
 # Contributing
 Feel free to submit a pull request or an issue!
