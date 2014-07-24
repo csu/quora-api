@@ -6,10 +6,14 @@ An unofficial API for Quora.
 ### Table of Contents
 * [API Usage](#api-usage)
 * [Features](#features)
+* [Installation](#installation)
+* [Contributing](#contributing)
 
 **Note: The new Quora UI revamp breaks this API, so whenever that goes public for guests, parts of the API will need to be rewritten.**
 
 # API Usage
+**API Base URL: `http://quora-api.herokuapp.com`**
+
 ## GET: `/users/<user>`
 ### Example
 Example usage: GET `/users/Christopher-J-Su`
@@ -63,3 +67,14 @@ Example result (excerpt):
 
 ### Todo
 * Questions and answers
+* Unit tests
+* Memcache
+
+# Installation
+If you want to run the API locally:
+
+  $ pip install -r requirements.txt
+  $ python server.py
+
+# Contributing
+Feel free to submit a pull request or an issue!
