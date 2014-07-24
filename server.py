@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 from flask import Flask, jsonify, request
 import requests
+
 from bs4 import BeautifulSoup
-import re
+import feedparser
 
 app = Flask(__name__)
 
@@ -17,6 +18,15 @@ def get_count(element):
 
 def get_count_for_user_href(soup, user, suffix):
     return get_count(soup.find('a', class_='link_label', href='/' + user + '/' + suffix))
+
+def parse_feed_item(item):
+    dict = {}
+    keys = ['link', 'guid', 'published', 'title', 'summary']
+    print item.keys()
+    for key in keys:
+        if key in item.keys():
+            dict[key] = item[key]
+    return dict
 
 ####################################################################
 # Routes
@@ -51,6 +61,19 @@ def user_route(user):
         except:
             pass
     return jsonify(user_dict)
+
+@app.route('/users/<user>/activity', methods=['GET'])
+def user_activity_route(user):
+    f = feedparser.parse('http://www.quora.com/' + user + '/rss')
+    dict = {
+        'username': user,
+        'last_updated': f.feed.updated
+    }
+    for entry in f.entries:
+        if 'activity' not in dict.keys():
+            dict['activity'] = []
+        dict['activity'].append(parse_feed_item(entry))
+    return jsonify(dict)
 
 ####################################################################
 # Start Flask
