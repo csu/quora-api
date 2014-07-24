@@ -67,8 +67,9 @@ Output (excerpt):
 
 ### Todo
 * Questions and answers
+* Detailed user information (followers, following, etc.; not just statistics)
 * Unit tests
-* Memcache
+* Memcached
 
 # Installation
 If you want to run the API locally:
