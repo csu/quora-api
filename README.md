@@ -3,7 +3,11 @@ Quora API
 
 An unofficial API for Quora.
 
-**Note: The new Quora UI revamp breaks this, so whenever that goes public for guest visitors, parts of the API will need to be rewritten.**
+### Table of Contents
+* [API Usage](#api-usage)
+* [Features](#features)
+
+**Note: The new Quora UI revamp breaks this API, so whenever that goes public for guests, parts of the API will need to be rewritten.**
 
 # API Usage
 ## GET: `/users/<user>`
