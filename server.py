@@ -34,7 +34,13 @@ def parse_feed_item(item):
 
 @app.route('/', methods=['GET'])
 def index_route():
-    return jsonify({'author': 'Christopher Su'})
+    return jsonify({
+        'author': 'Christopher Su',
+        'author_url': 'http://christophersu.net',
+        'base_url': 'http://quora-api.herokuapp.com',
+        'project': 'Quora API',
+        'project_url': 'https://github.com/csu/quora-api'
+    })
 
 ####################################################################
 # Users
