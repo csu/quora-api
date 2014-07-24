@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT server:app
+web: newrelic-admin run-program gunicorn -b 0.0.0.0:$PORT server:app
