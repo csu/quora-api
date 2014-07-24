@@ -16,7 +16,7 @@ An unofficial API for Quora.
 
 ## GET: `/users/<user>`
 ### Example
-Example usage: GET `/users/Christopher-J-Su`
+Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su`
 
 Example result:
 
@@ -35,9 +35,9 @@ Example result:
 
 ## GET: `/users/<user>/activity`
 ### Example
-Example usage: GET `/users/Christopher-J-Su/activity`
+Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity`
 
-Example result (excerpt):
+Output (excerpt):
 
     {
       "activity": [
