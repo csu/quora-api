@@ -1,9 +1,9 @@
-quora-api
+Quora API
 =========
 
-An unofficial API for Quora. Currently implemented: Users.
+An unofficial API for Quora.
 
-# API
+# API Usage
 ## GET: `/users/<user>`
 Example usage: GET `/users/Christopher-J-Su`
 
@@ -21,3 +21,11 @@ Example result:
       "topics": 270, 
       "username": "Christopher-J-Su"
     }
+
+# Features
+### Currently implemented
+* User statistics
+
+### Todo
+* User activity
+* Questions and answers
