@@ -12,10 +12,10 @@ An unofficial API for Quora.
 **Note: The new Quora UI revamp breaks this API, so whenever that goes public for guests, parts of the API will need to be rewritten.**
 
 # API Usage
-### API Base URL: `http://quora-api.herokuapp.com`
+## API Base URL: `http://quora-api.herokuapp.com`
 
-## GET: `/users/<user>`
-### Example
+### GET: `/users/<user>`
+#### Example
 Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su`
 
 Example result:
@@ -33,8 +33,8 @@ Example result:
       "username": "Christopher-J-Su"
     }
 
-## GET: `/users/<user>/activity`
-### Example
+### GET: `/users/<user>/activity`
+#### Example
 Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity`
 
 Output (excerpt):
@@ -63,13 +63,13 @@ Output (excerpt):
 ## GET: `/users/<user>/activity/answers`
 Get the user's latest answers.
 
-## GET: `/users/<user>/activity/questions`
+### GET: `/users/<user>/activity/questions`
 Get the user's latest questions.
 
-## GET: `/users/<user>/activity/question_follows`
+### GET: `/users/<user>/activity/question_follows`
 Get the user's latest followed questions.
 
-## GET: `/users/<user>/activity/votes`
+### GET: `/users/<user>/activity/votes`
 Get the user's latest upvoted answers.
 
 # Features
