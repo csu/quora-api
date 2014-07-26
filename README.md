@@ -60,7 +60,7 @@ Output (excerpt):
       "username": "Christopher-J-Su"
     }
 
-## GET: `/users/<user>/activity/answers`
+### GET: `/users/<user>/activity/answers`
 Get the user's latest answers.
 
 ### GET: `/users/<user>/activity/questions`
