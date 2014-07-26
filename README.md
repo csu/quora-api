@@ -60,10 +60,23 @@ Output (excerpt):
       "username": "Christopher-J-Su"
     }
 
+## GET: `/users/<user>/activity/answers`
+Get the user's latest answers.
+
+## GET: `/users/<user>/activity/questions`
+Get the user's latest questions.
+
+## GET: `/users/<user>/activity/question_follows`
+Get the user's latest followed questions.
+
+## GET: `/users/<user>/activity/votes`
+Get the user's latest upvoted answers.
+
 # Features
 ### Currently implemented
 * User statistics
 * User activity
+  * broken down into answers, questions, user follows, and question follows
 
 ### Todo
 * Questions and answers
