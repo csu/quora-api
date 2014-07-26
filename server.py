@@ -32,19 +32,19 @@ def user_activity_route(user):
 
 @app.route('/users/<user>/answers', methods=['GET'])
 def user_answers_route(user):
-    return jsonify(Quora.get_activity(user).answers)
+    return jsonify({'items': Quora.get_activity(user).answers})
 
 @app.route('/users/<user>/questions', methods=['GET'])
 def user_questions_route(user):
-    return jsonify(Quora.get_activity(user).questions)
+    return jsonify({'items': Quora.get_activity(user).questions})
 
 @app.route('/users/<user>/question_follows', methods=['GET'])
 def user_question_follows_route(user):
-    return jsonify(Quora.get_activity(user).question_follows)
+    return jsonify({'items': Quora.get_activity(user).question_follows})
 
 @app.route('/users/<user>/votes', methods=['GET'])
 def user_votes_route(user):
-    return jsonify(Quora.get_activity(user).upvotes)
+    return jsonify({'items': Quora.get_activity(user).upvotes})
 
 ####################################################################
 # Start Flask
