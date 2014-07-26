@@ -22,7 +22,6 @@ def get_count_for_user_href(soup, user, suffix):
 def parse_feed_item(item):
     dict = {}
     keys = ['link', 'guid', 'published', 'title', 'summary']
-    print item.keys()
     for key in keys:
         if key in item.keys():
             dict[key] = item[key]
