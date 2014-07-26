@@ -12,7 +12,7 @@ An unofficial API for Quora.
 **Note: The new Quora UI revamp breaks this API, so whenever that goes public for guests, parts of the API will need to be rewritten.**
 
 # API Usage
-## API Base URL: `http://quora-api.herokuapp.com`
+### API Base URL: `http://quora-api.herokuapp.com`
 
 ### GET: `/users/<user>`
 #### Example
