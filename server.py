@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask, jsonify, request
-from pyquora import Quora, Activity
+from quora import Quora, Activity
 
 app = Flask(__name__)
 
