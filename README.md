@@ -87,6 +87,7 @@ Get the user's latest upvoted answers.
 # Installation
 If you want to run the API locally:
 
+    $ git submodule update --init --recursive # get pyquora
     $ pip install -r requirements.txt
     $ python server.py
 
