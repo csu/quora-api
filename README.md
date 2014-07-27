@@ -85,7 +85,9 @@ Get the user's latest upvoted answers.
 * Memcached
 
 # Installation
-If you want to run the API locally:
+You will need [Python 2](https://www.python.org/download/). [pip](http://pip.readthedocs.org/en/latest/installing.html) is recommended for installing dependencies.
+
+To run the API locally:
 
     $ pip install -r requirements.txt
     $ python server.py
