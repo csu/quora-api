@@ -26,6 +26,10 @@ def index_route():
 def user_route(user):
     return jsonify(Quora.get_user_stats(user))
 
+####################################################################
+# Activity
+####################################################################
+
 @app.route('/users/<user>/activity', methods=['GET'])
 def user_activity_route(user):
     return jsonify(Quora.get_user_activity(user))
