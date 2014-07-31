@@ -3,6 +3,8 @@ Quora API
 
 An unofficial API for Quora.
 
+### Note: quora-api is currently broken because of the recent Quora UI change! Fix coming soon. - July 31, 2014
+
 ### Table of Contents
 * [API Usage](#api-usage)
 * [Features](#features)
