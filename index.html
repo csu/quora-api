@@ -1,32 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>quora-api by csu</title>
+    <meta name="description" content="quora-api : An unofficial API for Quora.">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>quora-api</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>quora-api</h1>
-        <p>An unofficial API for Quora.</p>
-        <p class="view"><a href="https://github.com/csu/quora-api">View the Project on GitHub <small>csu/quora-api</small></a></p>
-        <ul>
-          <li><a href="https://github.com/csu/quora-api/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/csu/quora-api/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/csu/quora-api">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/csu/quora-api">View on GitHub</a>
+
+          <h1 id="project_title">quora-api</h1>
+          <h2 id="project_tagline">An unofficial API for Quora.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/csu/quora-api/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/csu/quora-api/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a name="quora-api" class="anchor" href="#quora-api"><span class="octicon octicon-link"></span></a>Quora API</h1>
 
@@ -60,19 +64,19 @@
 
 <p>Example result:</p>
 
-<pre><code>{
-  "answers": 19, 
-  "blogs": 2, 
-  "edits": 120, 
-  "followers": 6, 
-  "following": 64, 
-  "name": "Christopher J. Su", 
-  "posts": 1, 
-  "questions": 8, 
-  "topics": 270, 
-  "username": "Christopher-J-Su"
-}
-</code></pre>
+<div class="highlight highlight-json"><pre><span class="p">{</span>
+  <span class="nt">"answers"</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> 
+  <span class="nt">"blogs"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> 
+  <span class="nt">"edits"</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span> 
+  <span class="nt">"followers"</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> 
+  <span class="nt">"following"</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> 
+  <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Christopher J. Su"</span><span class="p">,</span> 
+  <span class="nt">"posts"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+  <span class="nt">"questions"</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> 
+  <span class="nt">"topics"</span><span class="p">:</span> <span class="mi">270</span><span class="p">,</span> 
+  <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Christopher-J-Su"</span>
+<span class="p">}</span>
+</pre></div>
 
 <h3>
 <a name="get-usersuseractivity" class="anchor" href="#get-usersuseractivity"><span class="octicon octicon-link"></span></a>GET: <code>/users/&lt;user&gt;/activity</code>
@@ -85,27 +89,27 @@
 
 <p>Output (excerpt):</p>
 
-<pre><code>{
-  "activity": [
-    &lt;-- ... ---&gt;
-    {
-      "link": "http://www.quora.com/University-of-Washington/What-does-the-UW-CS-department-gain-from-barring-other-UW-students-from-taking-its-courses/answer/Christopher-J-Su", 
-      "published": "Tue, 25 Feb 2014 00:10:55 GMT", 
-      "summary": "&lt;-- ... ---&gt;", 
-      "title": "What does the UW CS department gain from barring other UW students from taking its courses?"
-    }, 
-    {
-      "link": "http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses/answer/Christopher-J-Su", 
-      "published": "Tue, 25 Feb 2014 00:04:33 GMT", 
-      "summary": "&lt;div style=\"color: #666666;\"&gt;Christopher J. Su added this answer.&lt;/div&gt;&lt;br /&gt;&lt;div id=\"ld_ihbjvp_3370\"&gt;&lt;div style=\"font-weight: bold; color: #000000;\"&gt;&lt;div class=\"hover_menu hidden hover_menu_wide hover_menu_cards\" id=\"__w2_qIjTQfx_menu\" style=\"display: none;\"&gt;&lt;div class=\"hover_menu_nub\"&gt;&lt;/div&gt;&lt;div class=\"hover_menu_contents\" id=\"__w2_qIjTQfx_menu_contents\"&gt; &lt;/div&gt;&lt;/div&gt;&lt;a class=\"user\" href=\"http://www.quora.com/Christopher-J-Su\" id=\"__w2_qIjTQfx_link\"&gt;Christopher J. Su&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;I think you might need to fill out a CSE course petition to take a 300+-level CSE course as a non-major: &lt;span class=\"qlink_container\"&gt;&lt;a class=\"external_link\" href=\"https://www.cs.washington.edu/prospective_students/undergrad/petition/\" target=\"_blank\"&gt;Petition for Non-Majors&lt;/a&gt;&lt;/span&gt;.&lt;br /&gt;&lt;br /&gt;&lt;a href=\"http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses\" style=\"font-weight: bold;\"&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;", 
-      "title": "Can applied math students take CSE majors only courses?"
-    }
-    &lt;-- ... ---&gt;
-  ], 
-  "last_updated": "Thu, 24 Jul 2014 05:32:49 GMT", 
-  "username": "Christopher-J-Su"
-}
-</code></pre>
+<div class="highlight highlight-json"><pre><span class="p">{</span>
+  <span class="nt">"activity"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="err">&lt;--</span> <span class="err">...</span> <span class="err">---&gt;</span>
+    <span class="p">{</span>
+      <span class="nt">"link"</span><span class="p">:</span> <span class="s2">"http://www.quora.com/University-of-Washington/What-does-the-UW-CS-department-gain-from-barring-other-UW-students-from-taking-its-courses/answer/Christopher-J-Su"</span><span class="p">,</span> 
+      <span class="nt">"published"</span><span class="p">:</span> <span class="s2">"Tue, 25 Feb 2014 00:10:55 GMT"</span><span class="p">,</span> 
+      <span class="nt">"summary"</span><span class="p">:</span> <span class="s2">"&lt;-- ... ---&gt;"</span><span class="p">,</span> 
+      <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"What does the UW CS department gain from barring other UW students from taking its courses?"</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+      <span class="nt">"link"</span><span class="p">:</span> <span class="s2">"http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses/answer/Christopher-J-Su"</span><span class="p">,</span> 
+      <span class="nt">"published"</span><span class="p">:</span> <span class="s2">"Tue, 25 Feb 2014 00:04:33 GMT"</span><span class="p">,</span> 
+      <span class="nt">"summary"</span><span class="p">:</span> <span class="s2">"&lt;div style=\"color: #666666;\"&gt;Christopher J. Su added this answer.&lt;/div&gt;&lt;br /&gt;&lt;div id=\"ld_ihbjvp_3370\"&gt;&lt;div style=\"font-weight: bold; color: #000000;\"&gt;&lt;div class=\"hover_menu hidden hover_menu_wide hover_menu_cards\" id=\"__w2_qIjTQfx_menu\" style=\"display: none;\"&gt;&lt;div class=\"hover_menu_nub\"&gt;&lt;/div&gt;&lt;div class=\"hover_menu_contents\" id=\"__w2_qIjTQfx_menu_contents\"&gt; &lt;/div&gt;&lt;/div&gt;&lt;a class=\"user\" href=\"http://www.quora.com/Christopher-J-Su\" id=\"__w2_qIjTQfx_link\"&gt;Christopher J. Su&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;I think you might need to fill out a CSE course petition to take a 300+-level CSE course as a non-major: &lt;span class=\"qlink_container\"&gt;&lt;a class=\"external_link\" href=\"https://www.cs.washington.edu/prospective_students/undergrad/petition/\" target=\"_blank\"&gt;Petition for Non-Majors&lt;/a&gt;&lt;/span&gt;.&lt;br /&gt;&lt;br /&gt;&lt;a href=\"http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses\" style=\"font-weight: bold;\"&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;"</span><span class="p">,</span> 
+      <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"Can applied math students take CSE majors only courses?"</span>
+    <span class="p">}</span>
+    <span class="err">&lt;--</span> <span class="err">...</span> <span class="err">---&gt;</span>
+  <span class="p">],</span> 
+  <span class="nt">"last_updated"</span><span class="p">:</span> <span class="s2">"Thu, 24 Jul 2014 05:32:49 GMT"</span><span class="p">,</span> 
+  <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Christopher-J-Su"</span>
+<span class="p">}</span>
+</pre></div>
 
 <h3>
 <a name="get-usersuseractivityanswers" class="anchor" href="#get-usersuseractivityanswers"><span class="octicon octicon-link"></span></a>GET: <code>/users/&lt;user&gt;/activity/answers</code>
@@ -160,9 +164,9 @@
 
 <p>To run the API locally:</p>
 
-<pre><code>$ pip install -r requirements.txt
-$ python server.py
-</code></pre>
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>pip install -r requirements.txt
+<span class="nv">$ </span>python server.py
+</pre></div>
 
 <h1>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h1>
@@ -170,11 +174,15 @@ $ python server.py
 <p>Feel free to submit a pull request or an issue!</p>
       </section>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/csu">csu</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">quora-api maintained by <a href="https://github.com/csu">csu</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -185,6 +193,7 @@ $ python server.py
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
