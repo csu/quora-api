@@ -9,7 +9,7 @@ An unofficial API for Quora.
 * [Installation](#installation)
 * [Contributing](#contributing)
 
-### Note: pyquora is currently broken because of the recent Quora UI change! Fix coming soon. - September 26, 2014
+### Note: The user stats endpoints are currently broken because of the recent Quora UI change. Activity route is still functional (so activity/content backups should be unaffected).
 
 # API Usage
 ### API Base URL: `http://quora-api.herokuapp.com`
