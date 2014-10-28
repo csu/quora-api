@@ -19,18 +19,19 @@ Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su`
 Example result:
 ```json
 {
-  "answers": 19, 
-  "blogs": 2, 
-  "edits": 120, 
-  "followers": 6, 
-  "following": 64, 
-  "name": "Christopher J. Su", 
-  "posts": 1, 
-  "questions": 8, 
-  "topics": 270, 
+  "answers": 301, 
+  "blogs": null, 
+  "edits": 5576, 
+  "followers": 173, 
+  "following": 167, 
+  "name": "Christopher-J-Su", 
+  "posts": 6, 
+  "questions": 110, 
+  "topics": null, 
   "username": "Christopher-J-Su"
 }
 ```
+Note: Because of the recent Quora UI change the user stats about the number of blogs and topics followed (respectively "blogs" and "topics") are broken and will output "null"
 
 ### GET: `/users/<user>/activity`
 #### Example
@@ -94,4 +95,5 @@ $ python server.py
 ```
 
 # Contributing
-Feel free to submit a pull request or an issue!
+Feel free to submit a pull request or an issue! 
+Quora API uses the [pyquora package](https://github.com/csu/pyquora).
