@@ -20,17 +20,18 @@ Example result:
 ```json
 {
   "answers": 19, 
-  "blogs": 2, 
+  "blogs": null, 
   "edits": 120, 
   "followers": 6, 
   "following": 64, 
   "name": "Christopher J. Su", 
   "posts": 1, 
   "questions": 8, 
-  "topics": 270, 
+  "topics": null, 
   "username": "Christopher-J-Su"
 }
 ```
+Note: Because of the recent Quora UI change the user stats about the number of blogs and topics followed (respectively "blogs" and "topics") are broken and will output "null"
 
 ### GET: `/users/<user>/activity`
 #### Example
