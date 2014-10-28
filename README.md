@@ -19,14 +19,14 @@ Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su`
 Example result:
 ```json
 {
-  "answers": 19, 
+  "answers": 301, 
   "blogs": null, 
-  "edits": 120, 
-  "followers": 6, 
-  "following": 64, 
-  "name": "Christopher J. Su", 
-  "posts": 1, 
-  "questions": 8, 
+  "edits": 5576, 
+  "followers": 173, 
+  "following": 167, 
+  "name": "Christopher-J-Su", 
+  "posts": 6, 
+  "questions": 110, 
   "topics": null, 
   "username": "Christopher-J-Su"
 }
@@ -95,6 +95,5 @@ $ python server.py
 ```
 
 # Contributing
-Feel free to submit a pull request or an issue!
-
-quora-api use the pyquora package (https://github.com/csu/pyquora )
+Feel free to submit a pull request or an issue! 
+Quora API uses the [pyquora package](https://github.com/csu/pyquora).
