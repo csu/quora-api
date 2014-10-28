@@ -44,7 +44,7 @@
 <li><a href="#features">Features</a></li>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#contributing">Contributing</a></li>
-</ul><p><strong>Note: The new Quora UI revamp breaks this API, so whenever that goes public for guests, parts of the API will need to be rewritten.</strong></p>
+</ul>
 
 <h1>
 <a name="api-usage" class="anchor" href="#api-usage"><span class="octicon octicon-link"></span></a>API Usage</h1>
@@ -65,18 +65,20 @@
 <p>Example result:</p>
 
 <div class="highlight highlight-json"><pre><span class="p">{</span>
-  <span class="nt">"answers"</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> 
-  <span class="nt">"blogs"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> 
-  <span class="nt">"edits"</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span> 
-  <span class="nt">"followers"</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> 
-  <span class="nt">"following"</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> 
-  <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Christopher J. Su"</span><span class="p">,</span> 
-  <span class="nt">"posts"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
-  <span class="nt">"questions"</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> 
-  <span class="nt">"topics"</span><span class="p">:</span> <span class="mi">270</span><span class="p">,</span> 
+  <span class="nt">"answers"</span><span class="p">:</span> <span class="mi">301</span><span class="p">,</span> 
+  <span class="nt">"blogs"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+  <span class="nt">"edits"</span><span class="p">:</span> <span class="mi">5576</span><span class="p">,</span> 
+  <span class="nt">"followers"</span><span class="p">:</span> <span class="mi">173</span><span class="p">,</span> 
+  <span class="nt">"following"</span><span class="p">:</span> <span class="mi">167</span><span class="p">,</span> 
+  <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Christopher-J-Su"</span><span class="p">,</span> 
+  <span class="nt">"posts"</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> 
+  <span class="nt">"questions"</span><span class="p">:</span> <span class="mi">110</span><span class="p">,</span> 
+  <span class="nt">"topics"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
   <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Christopher-J-Su"</span>
 <span class="p">}</span>
 </pre></div>
+
+<p>Note: Because of the recent Quora UI change the user stats about the number of blogs and topics followed (respectively "blogs" and "topics") are broken and will output "null"</p>
 
 <h3>
 <a name="get-usersuseractivity" class="anchor" href="#get-usersuseractivity"><span class="octicon octicon-link"></span></a>GET: <code>/users/&lt;user&gt;/activity</code>
@@ -149,7 +151,9 @@
 <li>broken down into answers, questions, user follows, and question follows</li>
 </ul>
 </li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>Todo</h3>
 
 <ul>
@@ -157,7 +161,9 @@
 <li>Detailed user information (followers, following, etc.; not just statistics)</li>
 <li>Unit tests</li>
 <li>Memcached</li>
-</ul><h1>
+</ul>
+
+<h1>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
 
 <p>You will need <a href="https://www.python.org/download/">Python 2</a>. <a href="http://pip.readthedocs.org/en/latest/installing.html">pip</a> is recommended for installing dependencies.</p>
@@ -171,7 +177,8 @@
 <h1>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h1>
 
-<p>Feel free to submit a pull request or an issue!</p>
+<p>Feel free to submit a pull request or an issue! 
+Quora API uses the <a href="https://github.com/csu/pyquora">pyquora package</a>.</p>
       </section>
     </div>
 
