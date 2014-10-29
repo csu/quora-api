@@ -95,5 +95,5 @@ $ python server.py
 ```
 
 # Contributing
-Feel free to submit a pull request or an issue! 
+Feel free to submit a pull request or an issue!  
 Quora API uses the [pyquora package](https://github.com/csu/pyquora).
