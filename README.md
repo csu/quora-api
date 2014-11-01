@@ -31,7 +31,7 @@ Example result:
   "username": "Christopher-J-Su"
 }
 ```
-Note: Because of the recent Quora UI change the user stats about the number of blogs and topics followed (respectively "blogs" and "topics") are broken and will output "null"
+Note: due to recent Quora UI changes, the `blogs` and `topics` statistics are currently not working and will always return `null`.
 
 ### GET: `/users/<user>/activity`
 #### Example
