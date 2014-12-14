@@ -75,7 +75,7 @@ Get the user's latest upvoted answers.
 ### Currently implemented
 * User statistics
 * User activity
-  * broken down into answers, questions, user follows, and question follows
+  * Broken down into answers, questions, user follows, and question follows
 
 ### Todo
 * Questions and answers
