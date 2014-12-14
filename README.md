@@ -81,7 +81,7 @@ Get the user's latest upvoted answers.
 * Questions and answers
 * Detailed user information (followers, following, etc.; not just statistics)
 * Unit tests
-* Memcached
+* Cache data with memcached
 
 # Installation
 You will need [Python 2](https://www.python.org/download/). [pip](http://pip.readthedocs.org/en/latest/installing.html) is recommended for installing dependencies.
