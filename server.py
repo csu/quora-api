@@ -15,7 +15,15 @@ def index_route():
         'author_url': 'http://christophersu.net',
         'base_url': 'http://quora-api.herokuapp.com',
         'project': 'Quora API',
-        'project_url': 'https://github.com/csu/quora-api'
+        'project_url': 'https://github.com/csu/quora-api',
+        'endpoints': {
+            'user': '/users/{user}',
+            'user_activity': '/users/{user}/activity',
+            'user_activity_answers': '/users/{user}/activity/answers',
+            'user_activity_questions': '/users/{user}/activity/questions',
+            'user_activity_question_follows': '/users/{user}/activity/question_follows',
+            'user_activity_votes': '/users/{user}/activity/votes'
+        }
     })
 
 ####################################################################
