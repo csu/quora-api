@@ -12,10 +12,12 @@ app = Flask(__name__)
 def index_route():
     return jsonify({
         'author': 'Christopher Su',
-        'author_url': 'http://christophersu.net',
+        'author_url': 'http://christopher.su',
         'base_url': 'http://quora-api.herokuapp.com',
         'project': 'Quora API',
         'project_url': 'https://github.com/csu/quora-api',
+        'project_documentation': 'http://christopher.su/quora-api/',
+        'project_issues': 'https://github.com/csu/quora-api/issues',
         'endpoints': {
             'user': '/users/{user}',
             'user_activity': '/users/{user}/activity',
