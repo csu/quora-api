@@ -48,15 +48,15 @@ def user_activity_route(user):
 def user_answers_route(user):
     return jsonify({'items': Quora.get_activity(user).answers})
 
-@app.route('/users/<user>/activity/questions', methods=['GET'])
+@app.route('/users/<user>/activity/user_follows', methods=['GET'])
 def user_questions_route(user):
-    return jsonify({'items': Quora.get_activity(user).questions})
+    return jsonify({'items': Quora.get_activity(user).user_follows})
 
 @app.route('/users/<user>/activity/want_answers', methods=['GET'])
 def user_want_answers_route(user):
     return jsonify({'items': Quora.get_activity(user).want_answers})
 
-@app.route('/users/<user>/activity/votes', methods=['GET'])
+@app.route('/users/<user>/activity/upvotes', methods=['GET'])
 def user_votes_route(user):
     return jsonify({'items': Quora.get_activity(user).upvotes})
 

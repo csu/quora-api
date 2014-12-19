@@ -62,8 +62,8 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/answers`
 Get the user's latest answers.
 
-### GET: `/users/<user>/activity/questions`
-Get the user's latest questions.
+### GET: `/users/<user>/activity/user_follows`
+Get the user's latest user follows.
 
 ### GET: `/users/<user>/activity/want_answers`
 Get the user's latest followed questions.
