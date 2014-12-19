@@ -59,16 +59,16 @@ Output (excerpt):
 }
 ```
 
-### ~~GET: `/users/<user>/activity/answers`~~
+### GET: `/users/<user>/activity/answers`
 Get the user's latest answers.
 
-### ~~GET: `/users/<user>/activity/questions`~~
+### GET: `/users/<user>/activity/questions`
 Get the user's latest questions.
 
-### ~~GET: `/users/<user>/activity/question_follows`~~
+### GET: `/users/<user>/activity/want_answers
 Get the user's latest followed questions.
 
-### ~~GET: `/users/<user>/activity/votes`~~
+### GET: `/users/<user>/activity/upvotes`
 Get the user's latest upvoted answers.
 
 # Features
