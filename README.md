@@ -71,6 +71,9 @@ Get the user's latest followed questions.
 ### GET: `/users/<user>/activity/upvotes`
 Get the user's latest upvoted answers.
 
+### GET: `/users/<user>/activity/review_requests`
+Get the user's latest review requests.
+
 # Features
 ### Currently implemented
 * User statistics

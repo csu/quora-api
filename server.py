@@ -60,6 +60,10 @@ def user_want_answers_route(user):
 def user_votes_route(user):
     return jsonify({'items': Quora.get_activity(user).upvotes})
 
+@app.route('/users/<user>/activity/review_requests', methods=['GET'])
+def user_votes_route(user):
+    return jsonify({'items': Quora.get_activity(user).review_requests})
+
 ####################################################################
 # Start Flask
 ####################################################################
