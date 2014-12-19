@@ -65,7 +65,7 @@ Get the user's latest answers.
 ### GET: `/users/<user>/activity/questions`
 Get the user's latest questions.
 
-### GET: `/users/<user>/activity/want_answers
+### GET: `/users/<user>/activity/want_answers`
 Get the user's latest followed questions.
 
 ### GET: `/users/<user>/activity/upvotes`
