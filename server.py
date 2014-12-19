@@ -4,6 +4,13 @@ from quora import Quora, Activity
 
 app = Flask(__name__)
 
+# log to stderr
+import logging from logging
+import StreamHandler
+file_handler = StreamHandler()
+app.logger.setLevel(logging.DEBUG)
+app.logger.addHandler(file_handler)
+
 ####################################################################
 # Routes
 ####################################################################
@@ -49,7 +56,7 @@ def user_answers_route(user):
     return jsonify({'items': Quora.get_activity(user).answers})
 
 @app.route('/users/<user>/activity/user_follows', methods=['GET'])
-def user_questions_route(user):
+def user_user_follows_route(user):
     return jsonify({'items': Quora.get_activity(user).user_follows})
 
 @app.route('/users/<user>/activity/want_answers', methods=['GET'])
@@ -57,11 +64,11 @@ def user_want_answers_route(user):
     return jsonify({'items': Quora.get_activity(user).want_answers})
 
 @app.route('/users/<user>/activity/upvotes', methods=['GET'])
-def user_votes_route(user):
+def user_upvotes_route(user):
     return jsonify({'items': Quora.get_activity(user).upvotes})
 
 @app.route('/users/<user>/activity/review_requests', methods=['GET'])
-def user_votes_route(user):
+def user_review_requests_route(user):
     return jsonify({'items': Quora.get_activity(user).review_requests})
 
 ####################################################################
