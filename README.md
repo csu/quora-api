@@ -205,7 +205,7 @@ Output:
 * Question statistics
 
 ### Todo
-* Questions and answers
+* Answers
 * Detailed user information (followers, following, etc.; not just statistics)
 * Unit tests
 * Cache data with memcached
