@@ -13,14 +13,14 @@ An unofficial API for Quora.
 ### API Base URL: `http://quora-api.herokuapp.com`
 
 ## Endpoints Summary
-* GET: `/users/<user>`
-  * GET: `/users/<user>/activity`
+* GET: [`/users/<user>`](#get-usersuser)
+  * GET: [`/users/<user>/activity`](#get-usersuseractivity)
     * GET: `/users/<user>/activity/answers`
     * GET: `/users/<user>/activity/user_follows`
     * GET: `/users/<user>/activity/want_answers`
     * GET: `/users/<user>/activity/upvotes`
     * GET: `/users/<user>/activity/review_requests`
-* GET: `/questions/<question>`
+* GET: [`/questions/<question>`](#get-questionsquestion)
 
 ### GET: `/users/<user>`
 #### Example
@@ -182,7 +182,7 @@ Get statistics on a question.
 #### Example
 Example usage: `GET http://quora-api.herokuapp.com/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional`
 
-Output (excerpt):
+Output:
 ```json
 {
   "answer_count": 6, 
