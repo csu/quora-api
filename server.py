@@ -32,7 +32,9 @@ def index_route():
             'user_activity_questions': '/users/{user}/activity/questions',
             'user_activity_want_answers': '/users/{user}/activity/want_answers',
             'user_activity_votes': '/users/{user}/activity/votes',
-            'question': '/questions/{question}'
+            'question': '/questions/{question}',
+            'answer': '/answer/{answer_short_link}',
+            'answer_with_user': '/answer/{question}/{user}'
         }
     })
 
@@ -78,6 +80,17 @@ def user_review_requests_route(user):
 @app.route('/questions/<question>', methods=['GET'])
 def question_stats_route(question):
     return jsonify(Quora.get_question_stats(question))
+
+####################################################################
+# Answers
+####################################################################
+@app.route('/answers/<question>/<user>', methods=['GET'])
+def answer_stats_specific_user_route(question):
+    return jsonify(Quora.get_one_answer(question, user=user))
+
+@app.route('/answers/<answer_short_link>', methods=['GET'])
+def answer_stats_short_link_route(answer_short_link):
+    return jsonify(Quora.get_one_answer(answer_short_link))
 
 ####################################################################
 # Start Flask
