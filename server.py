@@ -33,8 +33,8 @@ def index_route():
             'user_activity_want_answers': '/users/{user}/activity/want_answers',
             'user_activity_votes': '/users/{user}/activity/votes',
             'question': '/questions/{question}',
-            'answer': '/answer/{answer_short_link}',
-            'answer_with_user': '/answer/{question}/{user}'
+            'answer': '/answers/{answer_short_link}',
+            'answer_with_user': ['/answers/{question}/{user}', '/answers/{question}/answer/{user}']
         }
     })
 
