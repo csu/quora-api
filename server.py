@@ -85,7 +85,7 @@ def question_stats_route(question):
 # Answers
 ####################################################################
 @app.route('/answers/<question>/<user>', methods=['GET'])
-def answer_stats_specific_user_route(question):
+def answer_stats_specific_user_route(question, user):
     return jsonify(Quora.get_one_answer(question, user=user))
 
 @app.route('/answers/<answer_short_link>', methods=['GET'])
