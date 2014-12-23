@@ -5,7 +5,7 @@ An unofficial API for Quora.
 
 ### Table of Contents
 * [API Usage](#api-usage)
-  * [Endpoints](#endpoints-summary)
+* Question statistics
 * [Features](#features)
 * [Installation](#installation)
 * [Contributing](#contributing)
@@ -202,7 +202,7 @@ Output:
 ### Currently implemented
 * User statistics
 * User activity
-  * Broken down into answers, questions, user follows, and question follows
+* Question statistics
 
 ### Todo
 * Questions and answers
