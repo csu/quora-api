@@ -5,6 +5,7 @@ An unofficial API for Quora.
 
 ### Table of Contents
 * [API Usage](#api-usage)
+  * [Endpoints](#endpoints-summary)
 * [Features](#features)
 * [Installation](#installation)
 * [Contributing](#contributing)
