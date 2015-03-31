@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 from flask import Flask, jsonify, request
 from quora import Quora, Activity
-
-app = Flask(__name__)
-
-# log to stderr
 import logging
 from logging import StreamHandler
+
 file_handler = StreamHandler()
 app.logger.setLevel(logging.DEBUG)
 app.logger.addHandler(file_handler)
+
+app = Flask(__name__)
 
 ####################################################################
 # Routes
