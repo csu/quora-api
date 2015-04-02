@@ -202,9 +202,9 @@ Output:
 * User statistics
 * User activity
 * Question statistics
+* Answer statistics
 
 ### Todo
-* Answers
 * Detailed user information (followers, following, etc.; not just statistics)
 * Unit tests
 * Cache data with memcached
