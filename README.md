@@ -120,7 +120,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/want_answers`
 Get the user's latest followed questions.
 #### Example
-Example usage: `GET quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers`
+Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers`
 
 Output (excerpt):
 ```json
@@ -140,7 +140,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/upvotes`
 Get the user's latest upvoted answers.
 #### Example
-Example usage: `GET quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes`
+Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes`
 
 Output (excerpt):
 ```json
