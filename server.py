@@ -4,11 +4,11 @@ from quora import Quora, Activity
 import logging
 from logging import StreamHandler
 
+app = Flask(__name__)
+
 file_handler = StreamHandler()
 app.logger.setLevel(logging.DEBUG)
 app.logger.addHandler(file_handler)
-
-app = Flask(__name__)
 
 # log to stderr
 import logging
