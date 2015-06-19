@@ -1,7 +1,7 @@
 Quora API
 =========
 
-#### Note: this API is currently broken due to changes on Quora's end. Please report issues and make pull requests over at [csu/pyquora](http://github.com/csu/pyquora).
+#### Note: this API is currently broken due to changes on Quora's end. Please open issues and make pull requests regarding this at [csu/pyquora](http://github.com/csu/pyquora).
 
 An unofficial API for Quora.
 
