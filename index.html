@@ -1,38 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="quora-api : An unofficial API for Quora.">
+    <title>quora-api by csu</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>quora-api</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>quora-api</h1>
+        <p>An unofficial API for Quora.</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/csu/quora-api">View on GitHub</a>
+        <p class="view"><a href="https://github.com/csu/quora-api">View the Project on GitHub <small>csu/quora-api</small></a></p>
 
-          <h1 id="project_title">quora-api</h1>
-          <h2 id="project_tagline">An unofficial API for Quora.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/csu/quora-api/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/csu/quora-api/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/csu/quora-api/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/csu/quora-api/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/csu/quora-api">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
 <a id="quora-api" class="anchor" href="#quora-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quora API</h1>
+
+<h4>
+<a id="note-parts-of-this-api-may-be-broken-due-to-changes-on-quoras-end-please-open-issues-and-make-pull-requests-regarding-this-at-csupyquora" class="anchor" href="#note-parts-of-this-api-may-be-broken-due-to-changes-on-quoras-end-please-open-issues-and-make-pull-requests-regarding-this-at-csupyquora" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note: parts of this API may be broken due to changes on Quora's end. Please open issues and make pull requests regarding this at <a href="http://github.com/csu/pyquora">csu/pyquora</a>.</h4>
 
 <p>An unofficial API for Quora.</p>
 
@@ -41,7 +41,6 @@
 
 <ul>
 <li><a href="#api-usage">API Usage</a></li>
-<li>Question statistics</li>
 <li><a href="#features">Features</a></li>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#contributing">Contributing</a></li>
@@ -94,16 +93,16 @@
 <p>Example result:</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>answers<span class="pl-pds">"</span></span>: <span class="pl-c1">301</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>blogs<span class="pl-pds">"</span></span>: <span class="pl-c1">null</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>edits<span class="pl-pds">"</span></span>: <span class="pl-c1">5576</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>followers<span class="pl-pds">"</span></span>: <span class="pl-c1">173</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>following<span class="pl-pds">"</span></span>: <span class="pl-c1">167</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Christopher-J-Su<span class="pl-pds">"</span></span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>posts<span class="pl-pds">"</span></span>: <span class="pl-c1">6</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>questions<span class="pl-pds">"</span></span>: <span class="pl-c1">110</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>topics<span class="pl-pds">"</span></span>: <span class="pl-c1">null</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>username<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Christopher-J-Su<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>answers<span class="pl-pds">"</span></span>: <span class="pl-c1">301</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>blogs<span class="pl-pds">"</span></span>: <span class="pl-c1">null</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>edits<span class="pl-pds">"</span></span>: <span class="pl-c1">5576</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>followers<span class="pl-pds">"</span></span>: <span class="pl-c1">173</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>following<span class="pl-pds">"</span></span>: <span class="pl-c1">167</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Christopher-J-Su<span class="pl-pds">"</span></span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>posts<span class="pl-pds">"</span></span>: <span class="pl-c1">6</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>questions<span class="pl-pds">"</span></span>: <span class="pl-c1">110</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>topics<span class="pl-pds">"</span></span>: <span class="pl-c1">null</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>username<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Christopher-J-Su<span class="pl-pds">"</span></span>
 }</pre></div>
 
 <p>Note: due to recent Quora UI changes, the <code>blogs</code> and <code>topics</code> statistics are currently not working and will always return <code>null</code>.</p>
@@ -122,22 +121,22 @@
 <p>Output (excerpt):</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>activity<span class="pl-pds">"</span></span>: [
+  <span class="pl-s"><span class="pl-pds">"</span>activity<span class="pl-pds">"</span></span>: [
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>http://www.quora.com/University-of-Washington/What-does-the-UW-CS-department-gain-from-barring-other-UW-students-from-taking-its-courses/answer/Christopher-J-Su<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Tue, 25 Feb 2014 00:10:55 GMT<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>&lt;-- ... ---&gt;<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>What does the UW CS department gain from barring other UW students from taking its courses?<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/University-of-Washington/What-does-the-UW-CS-department-gain-from-barring-other-UW-students-from-taking-its-courses/answer/Christopher-J-Su<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tue, 25 Feb 2014 00:10:55 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;-- ... ---&gt;<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>What does the UW CS department gain from barring other UW students from taking its courses?<span class="pl-pds">"</span></span>
     }, 
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses/answer/Christopher-J-Su<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Tue, 25 Feb 2014 00:04:33 GMT<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>&lt;div style=<span class="pl-cce">\"</span>color: #666666;<span class="pl-cce">\"</span>&gt;Christopher J. Su added this answer.&lt;/div&gt;&lt;br /&gt;&lt;div id=<span class="pl-cce">\"</span>ld_ihbjvp_3370<span class="pl-cce">\"</span>&gt;&lt;div style=<span class="pl-cce">\"</span>font-weight: bold; color: #000000;<span class="pl-cce">\"</span>&gt;&lt;div class=<span class="pl-cce">\"</span>hover_menu hidden hover_menu_wide hover_menu_cards<span class="pl-cce">\"</span> id=<span class="pl-cce">\"</span>__w2_qIjTQfx_menu<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>display: none;<span class="pl-cce">\"</span>&gt;&lt;div class=<span class="pl-cce">\"</span>hover_menu_nub<span class="pl-cce">\"</span>&gt;&lt;/div&gt;&lt;div class=<span class="pl-cce">\"</span>hover_menu_contents<span class="pl-cce">\"</span> id=<span class="pl-cce">\"</span>__w2_qIjTQfx_menu_contents<span class="pl-cce">\"</span>&gt; &lt;/div&gt;&lt;/div&gt;&lt;a class=<span class="pl-cce">\"</span>user<span class="pl-cce">\"</span> href=<span class="pl-cce">\"</span>http://www.quora.com/Christopher-J-Su<span class="pl-cce">\"</span> id=<span class="pl-cce">\"</span>__w2_qIjTQfx_link<span class="pl-cce">\"</span>&gt;Christopher J. Su&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;I think you might need to fill out a CSE course petition to take a 300+-level CSE course as a non-major: &lt;span class=<span class="pl-cce">\"</span>qlink_container<span class="pl-cce">\"</span>&gt;&lt;a class=<span class="pl-cce">\"</span>external_link<span class="pl-cce">\"</span> href=<span class="pl-cce">\"</span>https://www.cs.washington.edu/prospective_students/undergrad/petition/<span class="pl-cce">\"</span> target=<span class="pl-cce">\"</span>_blank<span class="pl-cce">\"</span>&gt;Petition for Non-Majors&lt;/a&gt;&lt;/span&gt;.&lt;br /&gt;&lt;br /&gt;&lt;a href=<span class="pl-cce">\"</span>http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>font-weight: bold;<span class="pl-cce">\"</span>&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Can applied math students take CSE majors only courses?<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses/answer/Christopher-J-Su<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tue, 25 Feb 2014 00:04:33 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;div style=<span class="pl-cce">\"</span>color: #666666;<span class="pl-cce">\"</span>&gt;Christopher J. Su added this answer.&lt;/div&gt;&lt;br /&gt;&lt;div id=<span class="pl-cce">\"</span>ld_ihbjvp_3370<span class="pl-cce">\"</span>&gt;&lt;div style=<span class="pl-cce">\"</span>font-weight: bold; color: #000000;<span class="pl-cce">\"</span>&gt;&lt;div class=<span class="pl-cce">\"</span>hover_menu hidden hover_menu_wide hover_menu_cards<span class="pl-cce">\"</span> id=<span class="pl-cce">\"</span>__w2_qIjTQfx_menu<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>display: none;<span class="pl-cce">\"</span>&gt;&lt;div class=<span class="pl-cce">\"</span>hover_menu_nub<span class="pl-cce">\"</span>&gt;&lt;/div&gt;&lt;div class=<span class="pl-cce">\"</span>hover_menu_contents<span class="pl-cce">\"</span> id=<span class="pl-cce">\"</span>__w2_qIjTQfx_menu_contents<span class="pl-cce">\"</span>&gt; &lt;/div&gt;&lt;/div&gt;&lt;a class=<span class="pl-cce">\"</span>user<span class="pl-cce">\"</span> href=<span class="pl-cce">\"</span>http://www.quora.com/Christopher-J-Su<span class="pl-cce">\"</span> id=<span class="pl-cce">\"</span>__w2_qIjTQfx_link<span class="pl-cce">\"</span>&gt;Christopher J. Su&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;I think you might need to fill out a CSE course petition to take a 300+-level CSE course as a non-major: &lt;span class=<span class="pl-cce">\"</span>qlink_container<span class="pl-cce">\"</span>&gt;&lt;a class=<span class="pl-cce">\"</span>external_link<span class="pl-cce">\"</span> href=<span class="pl-cce">\"</span>https://www.cs.washington.edu/prospective_students/undergrad/petition/<span class="pl-cce">\"</span> target=<span class="pl-cce">\"</span>_blank<span class="pl-cce">\"</span>&gt;Petition for Non-Majors&lt;/a&gt;&lt;/span&gt;.&lt;br /&gt;&lt;br /&gt;&lt;a href=<span class="pl-cce">\"</span>http://www.quora.com/Can-applied-math-students-take-CSE-majors-only-courses<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>font-weight: bold;<span class="pl-cce">\"</span>&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Can applied math students take CSE majors only courses?<span class="pl-pds">"</span></span>
     }
   ], 
-  <span class="pl-s1"><span class="pl-pds">"</span>last_updated<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Thu, 24 Jul 2014 05:32:49 GMT<span class="pl-pds">"</span></span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>username<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Christopher-J-Su<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>last_updated<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Thu, 24 Jul 2014 05:32:49 GMT<span class="pl-pds">"</span></span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>username<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Christopher-J-Su<span class="pl-pds">"</span></span>
 }</pre></div>
 
 <h3>
@@ -154,13 +153,13 @@
 <p>Output (excerpt):</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
+  <span class="pl-s"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>5:48afe1749959ac2b673b1094a13b6cb5#1418975956225507<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>http://www.quora.com/I-need-a-summer-internship-but-I-dont-want-to-apply-because-theres-a-90-chance-Ill-get-rejected-What-should-I-do/answer/Christopher-J-Su<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Fri, 19 Dec 2014 07:59:16 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>5:48afe1749959ac2b673b1094a13b6cb5#1418975956225507<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/I-need-a-summer-internship-but-I-dont-want-to-apply-because-theres-a-90-chance-Ill-get-rejected-What-should-I-do/answer/Christopher-J-Su<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Fri, 19 Dec 2014 07:59:16 GMT<span class="pl-pds">"</span></span>, 
       "summary": "&lt;div id=\"ld_ftujiv_1299\"&gt;&lt;div style=\"font-weight: bold; color: #000000;\"&gt;&lt;div class=\"hover_menu hidden hover_menu_cards hover_menu_wide hover_menu_cards\" id=\"__w2_lHemksQ_menu\" style=\"display: none;\"&gt;&lt;div class=\"hover_menu_nub\"&gt;&lt;/div&gt;&lt;div class=\"hover_menu_contents\" id=\"__w2_lHemksQ_menu_contents\"&gt; &lt;/div&gt;&lt;/div&gt;&lt;a class=\"user\" href=\"http://www.quora.com/Christopher-J-Su\" id=\"__w2_lHemksQ_link\"&gt;Christopher J. Su&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Apply, interview, fail, repeat. Keep failing. Eventually, you&amp;#039;ll notice you stop failing as much as you did before. Then, you&amp;#039;ll suddenly start passing interviews. Then, you&amp;#039;ll start getting offers.&lt;br /&gt;&lt;br /&gt;Don&amp;#039;t get locked up in the mindset that you won&amp;#039;t make it. If you never even try, you&amp;#039;ll never get an internship. Having interviews scheduled will motivate you to study and prepare for them. Doing the interviews themselves is great practice.&lt;br /&gt;&lt;br /&gt;&lt;a href=\"http://www.quora.com/I-need-a-summer-internship-but-I-dont-want-to-apply-because-theres-a-90-chance-Ill-get-rejected-What-should-I-do\" style=\"font-weight: bold;\"&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;", 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>I need a summer internship, but I don't want to apply because there's a 90% chance I'll get rejected. What should I do?<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>I need a summer internship, but I don't want to apply because there's a 90% chance I'll get rejected. What should I do?<span class="pl-pds">"</span></span>
     }
   ]
 }</pre></div>
@@ -179,20 +178,20 @@
 <p>Output (excerpt):</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
+  <span class="pl-s"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>4:c219dbf80746802cf733f0cb3d5218c2#1419000196656496<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>http://www.quora.com/Inna-Vishik<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Fri, 19 Dec 2014 14:43:16 GMT<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Inna Vishik<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>4:c219dbf80746802cf733f0cb3d5218c2#1419000196656496<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/Inna-Vishik<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Fri, 19 Dec 2014 14:43:16 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Inna Vishik<span class="pl-pds">"</span></span>
     },
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>4:bd7227ae22f8f8cd9acfcb906ae8f6ea#1418975190093378<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>http://www.quora.com/Mira-Zaslove<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Fri, 19 Dec 2014 07:46:30 GMT<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Mira Zaslove<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>4:bd7227ae22f8f8cd9acfcb906ae8f6ea#1418975190093378<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/Mira-Zaslove<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Fri, 19 Dec 2014 07:46:30 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Mira Zaslove<span class="pl-pds">"</span></span>
     }
   ]
 }</pre></div>
@@ -206,18 +205,18 @@
 <h4>
 <a id="example-4" class="anchor" href="#example-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers</code></p>
+<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers</code></p>
 
 <p>Output (excerpt):</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
+  <span class="pl-s"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>1:03fb57d2ccb343bff9bb608c6978f5c7#1418895552348316<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>http://www.quora.com/What-is-a-typical-day-like-for-a-software-engineer-at-Google<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Thu, 18 Dec 2014 09:39:12 GMT<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>&lt;div id=<span class="pl-cce">\"</span>ld_veqgnk_1856<span class="pl-cce">\"</span>&gt;&lt;span id=<span class="pl-cce">\"</span>ld_veqgnk_1857<span class="pl-cce">\"</span>&gt;5 Answers&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=<span class="pl-cce">\"</span>http://www.quora.com/What-is-a-typical-day-like-for-a-software-engineer-at-Google<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>font-weight: bold;<span class="pl-cce">\"</span>&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>What is a typical day like for a software engineer at Google?<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>1:03fb57d2ccb343bff9bb608c6978f5c7#1418895552348316<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/What-is-a-typical-day-like-for-a-software-engineer-at-Google<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Thu, 18 Dec 2014 09:39:12 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;div id=<span class="pl-cce">\"</span>ld_veqgnk_1856<span class="pl-cce">\"</span>&gt;&lt;span id=<span class="pl-cce">\"</span>ld_veqgnk_1857<span class="pl-cce">\"</span>&gt;5 Answers&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=<span class="pl-cce">\"</span>http://www.quora.com/What-is-a-typical-day-like-for-a-software-engineer-at-Google<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>font-weight: bold;<span class="pl-cce">\"</span>&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>What is a typical day like for a software engineer at Google?<span class="pl-pds">"</span></span>
     }
   ]
 }</pre></div>
@@ -231,18 +230,18 @@
 <h4>
 <a id="example-5" class="anchor" href="#example-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes</code></p>
+<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes</code></p>
 
 <p>Output (excerpt):</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
+  <span class="pl-s"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>5:cf756de40913266d1c7bb0ff1306a384#1419235600718606<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>https://www.quora.com/What-criteria-are-Google-interns-graded-on-for-performance-reviews/answer/Kshitij-Gopal<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Mon, 22 Dec 2014 08:06:40 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>5:cf756de40913266d1c7bb0ff1306a384#1419235600718606<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>https://www.quora.com/What-criteria-are-Google-interns-graded-on-for-performance-reviews/answer/Kshitij-Gopal<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Mon, 22 Dec 2014 08:06:40 GMT<span class="pl-pds">"</span></span>, 
       "summary": "&lt;div id=\"ld_gurtiz_2329\"&gt;&lt;div style=\"font-weight: bold; color: #000000;\"&gt;&lt;div class=\"hover_menu hidden hover_menu_cards hover_menu_wide hover_menu_cards\" id=\"__w2_EisD67h_menu\" style=\"display: none;\"&gt;&lt;div class=\"hover_menu_nub\"&gt;&lt;/div&gt;&lt;div class=\"hover_menu_contents\" id=\"__w2_EisD67h_menu_contents\"&gt; &lt;/div&gt;&lt;/div&gt;&lt;a class=\"user\" href=\"https://www.quora.com/Kshitij-Gopal\" id=\"__w2_EisD67h_link\"&gt;Kshitij Gopal&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;I&amp;#039;m not sure on what basis the earlier answer was given, but as someone who managed interns directly at Google I&amp;#039;ll give this one a crack.&lt;br /&gt;&lt;br /&gt;Interns are evaluated on a number of parameters, most of which are confidential but rest assured there are a range of performance criteria, parameters that measure initiative, enthusiasm, work ethic and finally Googley-ness. Going above and beyond is expected and will help you in your final evaluation, if you&amp;#039;re an aspiring intern then remember that.&lt;br /&gt;&lt;br /&gt;Just to clarify the other answer completely - there is nothing random about it and certainly no &amp;quot;lottery&amp;quot; system. I&amp;#039;ve seen and filled the evaluation form, at Google not much is left to luck.&lt;br /&gt;&lt;br /&gt;&lt;a href=\"https://www.quora.com/What-criteria-are-Google-interns-graded-on-for-performance-reviews\" style=\"font-weight: bold;\"&gt;See question on Quora&lt;/a&gt;&lt;/div&gt;", 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>What criteria are Google interns graded on for performance reviews?<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>What criteria are Google interns graded on for performance reviews?<span class="pl-pds">"</span></span>
     }
   ]
 }</pre></div>
@@ -261,13 +260,13 @@
 <p>Output (excerpt):</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
+  <span class="pl-s"><span class="pl-pds">"</span>items<span class="pl-pds">"</span></span>: [
     {
-      <span class="pl-s1"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>1:24ee4ef5eff0c53d8247f5a45e83f5e3#1418745295543236<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>https://www.quora.com/Reviews-of-Elixir-programming-language<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Tue, 16 Dec 2014 15:54:55 GMT<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>&lt;div id=<span class="pl-cce">\"</span>ld_qxesgk_3346<span class="pl-cce">\"</span>&gt;&lt;span id=<span class="pl-cce">\"</span>ld_qxesgk_3347<span class="pl-cce">\"</span>&gt;0 Answers&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=<span class="pl-cce">\"</span>https://www.quora.com/Reviews-of-Elixir-programming-language<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>font-weight: bold;<span class="pl-cce">\"</span>&gt;Write an answer on Quora&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;<span class="pl-pds">"</span></span>, 
-      <span class="pl-s1"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>Reviews of: Elixir (programming language)<span class="pl-pds">"</span></span>
+      <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>1:24ee4ef5eff0c53d8247f5a45e83f5e3#1418745295543236<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>https://www.quora.com/Reviews-of-Elixir-programming-language<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>published<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tue, 16 Dec 2014 15:54:55 GMT<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>summary<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;div id=<span class="pl-cce">\"</span>ld_qxesgk_3346<span class="pl-cce">\"</span>&gt;&lt;span id=<span class="pl-cce">\"</span>ld_qxesgk_3347<span class="pl-cce">\"</span>&gt;0 Answers&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=<span class="pl-cce">\"</span>https://www.quora.com/Reviews-of-Elixir-programming-language<span class="pl-cce">\"</span> style=<span class="pl-cce">\"</span>font-weight: bold;<span class="pl-cce">\"</span>&gt;Write an answer on Quora&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;<span class="pl-pds">"</span></span>, 
+      <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Reviews of: Elixir (programming language)<span class="pl-pds">"</span></span>
     }
   ]
 }</pre></div>
@@ -286,15 +285,15 @@
 <p>Output:</p>
 
 <div class="highlight highlight-json"><pre>{
-  <span class="pl-s1"><span class="pl-pds">"</span>answer_count<span class="pl-pds">"</span></span>: <span class="pl-c1">6</span>, 
-  <span class="pl-s1"><span class="pl-pds">"</span>topics<span class="pl-pds">"</span></span>: [
-    <span class="pl-s1"><span class="pl-pds">"</span>Science, Engineering, and Technology<span class="pl-pds">"</span></span>, 
-    <span class="pl-s1"><span class="pl-pds">"</span>Science<span class="pl-pds">"</span></span>, 
-    <span class="pl-s1"><span class="pl-pds">"</span>Physical Sciences<span class="pl-pds">"</span></span>, 
-    <span class="pl-s1"><span class="pl-pds">"</span>Physics<span class="pl-pds">"</span></span>, 
-    <span class="pl-s1"><span class="pl-pds">"</span>Time (physics)<span class="pl-pds">"</span></span>
+  <span class="pl-s"><span class="pl-pds">"</span>answer_count<span class="pl-pds">"</span></span>: <span class="pl-c1">6</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>topics<span class="pl-pds">"</span></span>: [
+    <span class="pl-s"><span class="pl-pds">"</span>Science, Engineering, and Technology<span class="pl-pds">"</span></span>, 
+    <span class="pl-s"><span class="pl-pds">"</span>Science<span class="pl-pds">"</span></span>, 
+    <span class="pl-s"><span class="pl-pds">"</span>Physical Sciences<span class="pl-pds">"</span></span>, 
+    <span class="pl-s"><span class="pl-pds">"</span>Physics<span class="pl-pds">"</span></span>, 
+    <span class="pl-s"><span class="pl-pds">"</span>Time (physics)<span class="pl-pds">"</span></span>
   ], 
-  <span class="pl-s1"><span class="pl-pds">"</span>want_answers<span class="pl-pds">"</span></span>: <span class="pl-c1">7</span>
+  <span class="pl-s"><span class="pl-pds">"</span>want_answers<span class="pl-pds">"</span></span>: <span class="pl-c1">7</span>
 }</pre></div>
 
 <h1>
@@ -307,13 +306,13 @@
 <li>User statistics</li>
 <li>User activity</li>
 <li>Question statistics</li>
+<li>Answer statistics</li>
 </ul>
 
 <h3>
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Todo</h3>
 
 <ul>
-<li>Answers</li>
 <li>Detailed user information (followers, following, etc.; not just statistics)</li>
 <li>Unit tests</li>
 <li>Cache data with memcached</li>
@@ -335,16 +334,12 @@ $ python server.py</pre></div>
 <p>Feel free to submit a pull request or an issue!<br>
 Quora API uses the <a href="https://github.com/csu/pyquora">pyquora package</a>.</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">quora-api maintained by <a href="https://github.com/csu">csu</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/csu">csu</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -355,7 +350,6 @@ Quora API uses the <a href="https://github.com/csu/pyquora">pyquora package</a>.
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
