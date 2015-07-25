@@ -1,34 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>quora-api by csu</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>quora-api</h1>
-        <p>An unofficial API for Quora.</p>
+    <section class="page-header">
+      <h1 class="project-name">quora-api</h1>
+      <h2 class="project-tagline">An unofficial API for Quora.</h2>
+      <a href="https://github.com/csu/quora-api" class="btn">View on GitHub</a>
+      <a href="https://github.com/csu/quora-api/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/csu/quora-api/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <p class="view"><a href="https://github.com/csu/quora-api">View the Project on GitHub <small>csu/quora-api</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/csu/quora-api/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/csu/quora-api/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/csu/quora-api">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="quora-api" class="anchor" href="#quora-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quora API</h1>
 
 <h4>
@@ -50,7 +41,7 @@
 <a id="api-usage" class="anchor" href="#api-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Usage</h1>
 
 <h3>
-<a id="api-base-url-httpquora-apiherokuappcom" class="anchor" href="#api-base-url-httpquora-apiherokuappcom" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Base URL: <code>http://quora-api.herokuapp.com</code>
+<a id="api-base-url-httpquorachristophersu" class="anchor" href="#api-base-url-httpquorachristophersu" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Base URL: <code>http://quora.christopher.su</code>
 </h3>
 
 <h2>
@@ -88,7 +79,7 @@
 <h4>
 <a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Christopher-J-Su</code></p>
 
 <p>Example result:</p>
 
@@ -116,7 +107,7 @@
 <h4>
 <a id="example-1" class="anchor" href="#example-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Christopher-J-Su/activity</code></p>
 
 <p>Output (excerpt):</p>
 
@@ -148,7 +139,7 @@
 <h4>
 <a id="example-2" class="anchor" href="#example-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/answers</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Christopher-J-Su/activity/answers</code></p>
 
 <p>Output (excerpt):</p>
 
@@ -173,7 +164,7 @@
 <h4>
 <a id="example-3" class="anchor" href="#example-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/user_follows</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Christopher-J-Su/activity/user_follows</code></p>
 
 <p>Output (excerpt):</p>
 
@@ -205,7 +196,7 @@
 <h4>
 <a id="example-4" class="anchor" href="#example-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Christopher-J-Su/activity/want_answers</code></p>
 
 <p>Output (excerpt):</p>
 
@@ -230,7 +221,7 @@
 <h4>
 <a id="example-5" class="anchor" href="#example-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Christopher-J-Su/activity/upvotes</code></p>
 
 <p>Output (excerpt):</p>
 
@@ -255,7 +246,7 @@
 <h4>
 <a id="example-6" class="anchor" href="#example-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/users/Aaron-Ounn/activity/review_requests</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/users/Aaron-Ounn/activity/review_requests</code></p>
 
 <p>Output (excerpt):</p>
 
@@ -280,7 +271,7 @@
 <h4>
 <a id="example-7" class="anchor" href="#example-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
 
-<p>Example usage: <code>GET http://quora-api.herokuapp.com/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional</code></p>
+<p>Example usage: <code>GET http://quora.christopher.su/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional</code></p>
 
 <p>Output:</p>
 
@@ -295,6 +286,35 @@
   ], 
   <span class="pl-s"><span class="pl-pds">"</span>want_answers<span class="pl-pds">"</span></span>: <span class="pl-c1">7</span>
 }</pre></div>
+
+<h3>
+<a id="get-answersanswer_short_link" class="anchor" href="#get-answersanswer_short_link" aria-hidden="true"><span class="octicon octicon-link"></span></a>GET: <code>/answers/&lt;answer_short_link&gt;</code>
+</h3>
+
+<p>Get an answer by its short link.</p>
+
+<h4>
+<a id="example-8" class="anchor" href="#example-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
+
+<p>Example usage: <code>GET http://quora.christopher.su/answers/6hARL</code></p>
+
+<p>Output:</p>
+
+<div class="highlight highlight-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>answer<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;div...&lt;/div&gt;<span class="pl-pds">"</span></span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>author<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Mayur-P-R-Rohith<span class="pl-pds">"</span></span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>comment_count<span class="pl-pds">"</span></span>: <span class="pl-c1">1</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>question_link<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://www.quora.com/Does-Quora-similar-question-...<span class="pl-pds">"</span></span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>upvote_count<span class="pl-pds">"</span></span>: <span class="pl-c1">6</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>views<span class="pl-pds">"</span></span>: <span class="pl-c1">227</span>, 
+  <span class="pl-s"><span class="pl-pds">"</span>want_answers<span class="pl-pds">"</span></span>: <span class="pl-c1">8</span>
+}</pre></div>
+
+<h3>
+<a id="get-answersquestionauthor" class="anchor" href="#get-answersquestionauthor" aria-hidden="true"><span class="octicon octicon-link"></span></a>GET: <code>/answers/&lt;question&gt;/&lt;author&gt;</code>
+</h3>
+
+<p>Get an answer by its question and its author.</p>
 
 <h1>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h1>
@@ -333,14 +353,16 @@ $ python server.py</pre></div>
 
 <p>Feel free to submit a pull request or an issue!<br>
 Quora API uses the <a href="https://github.com/csu/pyquora">pyquora package</a>.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/csu">csu</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/csu/quora-api">quora-api</a> is maintained by <a href="https://github.com/csu">csu</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
+
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -353,3 +375,4 @@ Quora API uses the <a href="https://github.com/csu/pyquora">pyquora package</a>.
 
   </body>
 </html>
+
