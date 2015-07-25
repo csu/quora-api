@@ -12,7 +12,7 @@ An unofficial API for Quora.
 * [Contributing](#contributing)
 
 # API Usage
-### API Base URL: `http://quora-api.herokuapp.com`
+### API Base URL: `http://quora.christopher.su`
 
 ## Endpoints Summary
 * GET: [`/users/<user>`](#get-usersuser)
@@ -26,7 +26,7 @@ An unofficial API for Quora.
 
 ### GET: `/users/<user>`
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su`
 
 Example result:
 ```json
@@ -48,7 +48,7 @@ Note: due to recent Quora UI changes, the `blogs` and `topics` statistics are cu
 ### GET: `/users/<user>/activity`
 Get the user's activity.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity`
 
 Output (excerpt):
 ```json
@@ -75,7 +75,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/answers`
 Get the user's latest answers.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/answers`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/answers`
 
 Output (excerpt):
 ```json
@@ -95,7 +95,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/user_follows`
 Get the user's latest user follows.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/user_follows`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/user_follows`
 
 Output (excerpt):
 ```json
@@ -122,7 +122,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/want_answers`
 Get the user's latest followed questions.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/want_answers`
 
 Output (excerpt):
 ```json
@@ -142,7 +142,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/upvotes`
 Get the user's latest upvoted answers.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/upvotes`
 
 Output (excerpt):
 ```json
@@ -162,7 +162,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/review_requests`
 Get the user's latest review requests.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Aaron-Ounn/activity/review_requests`
+Example usage: `GET http://quora.christopher.su/users/Aaron-Ounn/activity/review_requests`
 
 Output (excerpt):
 ```json
@@ -182,7 +182,7 @@ Output (excerpt):
 ### GET: `/questions/<question>`
 Get statistics on a question.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional`
+Example usage: `GET http://quora.christopher.su/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional`
 
 Output:
 ```json
