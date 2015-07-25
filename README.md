@@ -199,6 +199,27 @@ Output:
 }
 ```
 
+### GET: `/answers/<answer_short_link>`
+Get an answer by its short link.
+#### Example
+Example usage: `GET http://quora.christopher.su/answers/6hARL`
+
+Output:
+```json
+{
+  "answer": "<div...</div>", 
+  "author": "Mayur-P-R-Rohith", 
+  "comment_count": 1, 
+  "question_link": "http://www.quora.com/Does-Quora-similar-question-...", 
+  "upvote_count": 6, 
+  "views": 227, 
+  "want_answers": 8
+}
+```
+
+### GET: `/answers/<question>/<author>`
+Get an answer by its question and its author.
+
 # Features
 ### Currently implemented
 * User statistics
