@@ -26,7 +26,7 @@ def index_route():
     return jsonify({
         'author': 'Christopher Su',
         'author_url': 'http://christopher.su',
-        'base_url': 'http://quora-api.herokuapp.com',
+        'base_url': 'http://quora.christopher.su',
         'project': 'Quora API',
         'project_url': 'https://github.com/csu/quora-api',
         'project_documentation': 'http://christopher.su/quora-api/',
