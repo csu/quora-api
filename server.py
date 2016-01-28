@@ -27,10 +27,12 @@ def index_route():
         'author': 'Christopher Su',
         'author_url': 'http://christopher.su',
         'base_url': 'http://quora.christopher.su',
-        'project': 'Quora API',
-        'project_url': 'https://github.com/csu/quora-api',
-        'project_documentation': 'http://christopher.su/quora-api/',
-        'project_issues': 'https://github.com/csu/quora-api/issues',
+        'project': {
+            'name': 'Quora API',
+            'url': 'https://github.com/csu/quora-api',
+            'documentation': 'http://christopher.su/quora-api/',
+            'issues': 'https://github.com/csu/quora-api/issues'
+        },
         'endpoints': {
             'user': '/users/{user}',
             'user_activity': '/users/{user}/activity',
