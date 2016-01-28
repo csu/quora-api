@@ -4,11 +4,11 @@ from quora import Quora, Activity
 import logging
 from logging import StreamHandler
 
+app = Flask(__name__)
+
 file_handler = StreamHandler()
 app.logger.setLevel(logging.DEBUG)
 app.logger.addHandler(file_handler)
-
-app = Flask(__name__)
 
 # log to stderr
 import logging
@@ -26,11 +26,13 @@ def index_route():
     return jsonify({
         'author': 'Christopher Su',
         'author_url': 'http://christopher.su',
-        'base_url': 'http://quora-api.herokuapp.com',
-        'project': 'Quora API',
-        'project_url': 'https://github.com/csu/quora-api',
-        'project_documentation': 'http://christopher.su/quora-api/',
-        'project_issues': 'https://github.com/csu/quora-api/issues',
+        'base_url': 'http://quora.christopher.su',
+        'project': {
+            'name': 'Quora API',
+            'url': 'https://github.com/csu/quora-api',
+            'documentation': 'http://christopher.su/quora-api/',
+            'issues': 'https://github.com/csu/quora-api/issues'
+        },
         'endpoints': {
             'user': '/users/{user}',
             'user_activity': '/users/{user}/activity',

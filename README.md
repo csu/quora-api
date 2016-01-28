@@ -1,6 +1,8 @@
 Quora API
 =========
 
+#### Note: parts of this API may be broken due to changes on Quora's end. Please open issues and make pull requests regarding this at [csu/pyquora](http://github.com/csu/pyquora).
+
 An unofficial API for Quora.
 
 ### Table of Contents
@@ -10,7 +12,7 @@ An unofficial API for Quora.
 * [Contributing](#contributing)
 
 # API Usage
-### API Base URL: `http://quora-api.herokuapp.com`
+### API Base URL: `http://quora.christopher.su`
 
 ## Endpoints Summary
 * GET: [`/users/<user>`](#get-usersuser)
@@ -24,7 +26,7 @@ An unofficial API for Quora.
 
 ### GET: `/users/<user>`
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su`
 
 Example result:
 ```json
@@ -46,7 +48,7 @@ Note: due to recent Quora UI changes, the `blogs` and `topics` statistics are cu
 ### GET: `/users/<user>/activity`
 Get the user's activity.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity`
 
 Output (excerpt):
 ```json
@@ -73,7 +75,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/answers`
 Get the user's latest answers.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/answers`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/answers`
 
 Output (excerpt):
 ```json
@@ -93,7 +95,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/user_follows`
 Get the user's latest user follows.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Christopher-J-Su/activity/user_follows`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/user_follows`
 
 Output (excerpt):
 ```json
@@ -120,7 +122,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/want_answers`
 Get the user's latest followed questions.
 #### Example
-Example usage: `GET quora-api.herokuapp.com/users/Christopher-J-Su/activity/want_answers`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/want_answers`
 
 Output (excerpt):
 ```json
@@ -140,7 +142,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/upvotes`
 Get the user's latest upvoted answers.
 #### Example
-Example usage: `GET quora-api.herokuapp.com/users/Christopher-J-Su/activity/upvotes`
+Example usage: `GET http://quora.christopher.su/users/Christopher-J-Su/activity/upvotes`
 
 Output (excerpt):
 ```json
@@ -160,7 +162,7 @@ Output (excerpt):
 ### GET: `/users/<user>/activity/review_requests`
 Get the user's latest review requests.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/users/Aaron-Ounn/activity/review_requests`
+Example usage: `GET http://quora.christopher.su/users/Aaron-Ounn/activity/review_requests`
 
 Output (excerpt):
 ```json
@@ -180,7 +182,7 @@ Output (excerpt):
 ### GET: `/questions/<question>`
 Get statistics on a question.
 #### Example
-Example usage: `GET http://quora-api.herokuapp.com/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional`
+Example usage: `GET http://quora.christopher.su/questions/If-space-is-3-dimensional-can-time-also-be-3-dimensional`
 
 Output:
 ```json
@@ -197,14 +199,35 @@ Output:
 }
 ```
 
+### GET: `/answers/<answer_short_link>`
+Get an answer by its short link.
+#### Example
+Example usage: `GET http://quora.christopher.su/answers/6hARL`
+
+Output:
+```json
+{
+  "answer": "<div...</div>", 
+  "author": "Mayur-P-R-Rohith", 
+  "comment_count": 1, 
+  "question_link": "http://www.quora.com/Does-Quora-similar-question-...", 
+  "upvote_count": 6, 
+  "views": 227, 
+  "want_answers": 8
+}
+```
+
+### GET: `/answers/<question>/<author>`
+Get an answer by its question and its author.
+
 # Features
 ### Currently implemented
 * User statistics
 * User activity
 * Question statistics
+* Answer statistics
 
 ### Todo
-* Answers
 * Detailed user information (followers, following, etc.; not just statistics)
 * Unit tests
 * Cache data with memcached
